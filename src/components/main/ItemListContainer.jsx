@@ -26,7 +26,6 @@ function ItemListContainer() {
             })
     },[input])
 
-
     if(loading) {
         return (
             <div className="loading-spinner m-5" >
