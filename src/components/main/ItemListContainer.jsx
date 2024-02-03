@@ -1,6 +1,5 @@
-// import React from 'react'
-
 import { useEffect, useState } from "react"
+import ItemList from "./ItemList"
 
 function ItemListContainer() {
 
@@ -20,17 +19,7 @@ function ItemListContainer() {
 console.log(products)
     return (
         <div>
-            {
-                products.map(prod => {
-                    return(
-                        <div key={prod.id}>
-                            <h3>{prod.title}</h3>
-                            <img src={prod.thumbnail} alt={prod.title} />
-                            <p>{prod.price}</p>
-                        </div>
-                    )
-                })
-            }
+            <ItemList products={products}/>
         </div>
     )
 }
