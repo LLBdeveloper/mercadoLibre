@@ -3,6 +3,7 @@ import ItemList from "./ItemList"
 import { ClipLoader } from "react-spinners";
 
 
+
 function ItemListContainer() {
 
     const[products, setProducts] = useState([])
@@ -31,6 +32,9 @@ function ItemListContainer() {
             <div className="loading-spinner m-5" >
                 <ClipLoader size={300} color={"#ffff00"} loading={loading} />
                 <h2 className=" m-2"> L o a d i n g  .   .   . </h2>
+
+
+                
             </div>
     )}
 
